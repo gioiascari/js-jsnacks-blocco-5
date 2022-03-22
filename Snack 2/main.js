@@ -2,7 +2,7 @@ console.log("Ok Js :)");
 //Crea 10 oggetti che rappresentano una zucchina.
 //Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 //Infine stampa separatamente quanto pesano i due gruppi di zucchine.
-
+//Crea 10 oggetti che rappresentano una zucchina.
 const cassetta = [
   {
     varietà: "zucchina napoletana",
@@ -56,10 +56,20 @@ const cassetta = [
   },
 ];
 
-//CALCOLO IL PESO TOTALE DI TUTTE LE ZUCCHINE
-let sum = 0;
+//Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+let zucchineShort = [];
+let zucchineLong = [];
+//ZUCCHINE SHORT
 for (let i = 0; i < cassetta.length; i++) {
-  let pesoTotale = cassetta[i].peso;
-  sum += pesoTotale;
+  if (cassetta[i].lunghezza < 15) {
+    let short = cassetta[i].lunghezza;
+    zucchineShort.push(short);
+  }
 }
-console.log(sum);
+//ZUCCHINE LONG
+for (let i = 0; i < cassetta.length; i++) {
+  if (cassetta[i].lunghezza > 15) {
+    let long = cassetta[i].lunghezza;
+    zucchineLong.push(long);
+  }
+}
