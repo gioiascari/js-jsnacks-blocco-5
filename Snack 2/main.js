@@ -17,7 +17,7 @@ const cassetta = [
   {
     varietà: "zucchina romanesco",
     peso: 65,
-    lunghezza: 22,
+    lunghezza: 12,
   },
   {
     varietà: "zucchina ortolano di Faenza",
@@ -42,7 +42,7 @@ const cassetta = [
   {
     varietà: "zucchina bianca triestina",
     peso: 70,
-    lunghezza: 17,
+    lunghezza: 10,
   },
   {
     varietà: "zucchina rigata pugliese",
@@ -52,7 +52,7 @@ const cassetta = [
   {
     varietà: "zucchina pâtisson",
     peso: 100,
-    lunghezza: 19,
+    lunghezza: 14,
   },
 ];
 
