@@ -61,15 +61,24 @@ let zucchineShort = [];
 let zucchineLong = [];
 //ZUCCHINE SHORT
 for (let i = 0; i < cassetta.length; i++) {
-  if (cassetta[i].lunghezza < 15) {
-    let short = cassetta[i].lunghezza;
-    zucchineShort.push(short);
+  if (cassetta[i].lunghezza <= 15) {
+    zucchineShort.push(cassetta[i])
   }
-}
-//ZUCCHINE LONG
-for (let i = 0; i < cassetta.length; i++) {
-  if (cassetta[i].lunghezza > 15) {
+  //ZUCCHINE LONG
+  else(cassetta[i].lunghezza > 15) {
     let long = cassetta[i].lunghezza;
     zucchineLong.push(long);
+  }
+}
+
+//Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+let pesoZucchineShort = 0;
+let pesoZucchineLong = 0;
+
+for (let i = 0; i < cassetta.length; i++) {
+  if (cassetta[i].lunghezza <= 15) {
+    let short = cassetta[i].peso;
+    pesoZucchineShort += short;
+    console.log("peso short " + pesoZucchineShort);
   }
 }
