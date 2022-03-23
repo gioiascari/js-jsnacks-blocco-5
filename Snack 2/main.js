@@ -72,7 +72,7 @@ for (let i = 0; i < cassetta.length; i++) {
 
 //Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 let pesoZucchinaShort = 0;
-var pesoZucchinaLong = 0;
+let pesoZucchinaLong = 0;
 //PESO ZUCCHINE SHORT
 for (i = 0; i < zucchineShort.length; i++) {
   let shortWeight = zucchineShort[i].peso;
